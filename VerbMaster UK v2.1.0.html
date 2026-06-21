@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>VERBMASTER UK 2.0</title>
+    
+    <!-- ICONA PERSONALIZZATA (bandiera UK + lingua) -->
+    <link rel="apple-touch-icon" href="data:image/png;base64,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">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #e8ecf1;
+            padding: 16px;
+            max-width: 640px;
+            margin: 0 auto;
+            padding-bottom: 30px;
+            color: #2c3e50;
+            font-size: 18px;
+        }
+        
+        #splash {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(145deg, #0f1a2b 0%, #1a2a3f 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.6s ease;
+        }
+        #splash.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+        #splash .splash-icon {
+            font-size: 80px;
+            margin-bottom: 12px;
+            opacity: 0.95;
+        }
+        #splash .splash-title {
+            color: #ffffff;
+            font-size: 34px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 20px rgba(255,255,255,0.08);
+        }
+        #splash .splash-brand {
+            color: #7bb8e0;
+            font-size: 18px;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            font-weight: 500;
+            margin-top: 14px;
+            text-shadow: 0 0 40px rgba(123, 184, 224, 0.25);
+        }
+        #splash .splash-tagline {
+            color: rgba(255,255,255,0.3);
+            font-size: 12px;
+            letter-spacing: 2px;
+            margin-top: 6px;
+            font-weight: 300;
+        }
+        #splash .loader {
+            margin-top: 30px;
+            width: 60px;
+            height: 3px;
+            background: rgba(255,255,255,0.06);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        #splash .loader-bar {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #5b9bc7, #8fc8ec);
+            border-radius: 4px;
+            animation: loadBar 1.8s ease forwards;
+        }
+        @keyframes loadBar {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+        
+        .header {
+            background: linear-gradient(145deg, #0f1a2b 0%, #1a2a3f 100%);
+            color: #f0f4f8;
+            padding: 20px 20px 16px;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(26, 35, 50, 0.25);
+            border: 1px solid rgba(255,255,255,0.04);
+        }
+        .header h1 { 
+            font-size: 28px; 
+            margin-bottom: 2px;
+            letter-spacing: 0.5px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+        .header .subtitle {
+            font-size: 13px;
+            opacity: 0.6;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+        .header .version {
+            display: inline-block;
+            background: rgba(255,255,255,0.06);
+            padding: 3px 16px;
+            border-radius: 20px;
+            font-size: 11px;
+            margin-top: 4px;
+            letter-spacing: 1px;
+            color: #8ba0b8;
+        }
+        
+        .brand-area {
+            margin-top: 14px;
+            padding-top: 14px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .brand-name {
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #7bb8e0;
+            text-shadow: 0 0 30px rgba(123, 184, 224, 0.15);
+        }
+        .brand-tagline {
+            font-size: 11px;
+            opacity: 0.5;
+            letter-spacing: 1.5px;
+            font-weight: 300;
+            color: #8ba0b8;
+        }
+        .brand-divider {
+            width: 1px;
+            height: 18px;
+            background: rgba(255,255,255,0.08);
+        }
+        
+        .speed-controls {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 12px;
+        }
+        .speed-btn {
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            touch-action: manipulation;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255,255,255,0.10);
+            background: rgba(255,255,255,0.04);
+            color: rgba(255,255,255,0.4);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-family: inherit;
+            letter-spacing: 0.3px;
+        }
+        .speed-btn:active { transform: scale(0.96); }
+        .speed-btn.active {
+            background: rgba(255,255,255,0.10);
+            border-color: #7bb8e0;
+            color: #ffffff;
+            box-shadow: 0 0 30px rgba(123, 184, 224, 0.08);
+        }
+        .speed-btn.active .speed-dot {
+            background: #7bb8e0;
+            box-shadow: 0 0 10px rgba(123, 184, 224, 0.3);
+        }
+        .speed-dot {
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.12);
+            transition: all 0.3s;
+        }
+        .speed-status {
+            font-size: 11px;
+            opacity: 0.35;
+            margin-top: 4px;
+            letter-spacing: 0.5px;
+            font-weight: 300;
+        }
+        .speed-icon {
+            font-size: 16px;
+            line-height: 1;
+        }
+        
+        .counter-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .counter {
+            font-size: 15px;
+            color: #7a8fa5;
+            font-weight: 400;
+            letter-spacing: 0.3px;
+            flex: 1;
+        }
+        .btn-group-actions {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+        }
+        .btn-action {
+            background: linear-gradient(145deg, #1a2a3f 0%, #0f1a2b 100%);
+            color: #ffffff;
+            border: none;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            font-size: 16px;
+            font-weight: 300;
+            cursor: pointer;
+            touch-action: manipulation;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            font-family: inherit;
+        }
+        .btn-action:active {
+            transform: scale(0.92);
+            opacity: 0.8;
+        }
+        .btn-action-label {
+            font-size: 10px;
+            color: #7a8fa5;
+            text-align: center;
+            letter-spacing: 0.3px;
+        }
+        .btn-action-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+        }
+        .btn-action.export {
+            background: linear-gradient(145deg, #1a3a2f 0%, #0f2a1b 100%);
+        }
+        .btn-action.import {
+            background: linear-gradient(145deg, #2a2a3f 0%, #1a1a2b 100%);
+        }
+        
+        .btn-add-verb {
+            background: linear-gradient(145deg, #1a2a3f 0%, #0f1a2b 100%);
+            color: #ffffff;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 24px;
+            font-weight: 300;
+            cursor: pointer;
+            touch-action: manipulation;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            font-family: inherit;
+        }
+        .btn-add-verb:active {
+            transform: scale(0.92);
+            opacity: 0.8;
+        }
+        
+        #fileInput {
+            display: none;
+        }
+        
+        .search-box {
+            width: 100%;
+            padding: 16px 20px;
+            font-size: 18px;
+            border: 2px solid #d5dce4;
+            border-radius: 14px;
+            margin-bottom: 16px;
+            outline: none;
+            background: #ffffff;
+            transition: all 0.3s;
+            color: #2c3e50;
+            font-family: inherit;
+        }
+        .search-box:focus { 
+            border-color: #4a6a85; 
+            box-shadow: 0 0 0 4px rgba(74, 106, 133, 0.10);
+        }
+        .search-box::placeholder {
+            color: #a0b3c6;
+            font-weight: 300;
+        }
+        
+        .verb-card {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 18px 20px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+            border: 1px solid rgba(0,0,0,0.04);
+            transition: box-shadow 0.2s;
+        }
+        .verb-card:active {
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .verb-base {
+            font-size: 22px;
+            font-weight: 700;
+            color: #1a2a3a;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .verb-forms {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+        }
+        .verb-forms .form-group {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: #f5f7fa;
+            padding: 6px 14px 6px 18px;
+            border-radius: 30px;
+            border: 1px solid #e9edf2;
+        }
+        .verb-forms .form-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #8a9fb5;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+        .verb-forms .form-text {
+            font-size: 17px;
+            font-weight: 500;
+            color: #1a2a3a;
+            min-width: 55px;
+        }
+        .btn-speak-small {
+            border: none;
+            background: none;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 4px 6px;
+            border-radius: 8px;
+            touch-action: manipulation;
+            color: #4a6a85;
+            transition: background 0.2s;
+        }
+        .btn-speak-small:active { 
+            background: #eef3f8; 
+            transform: scale(0.92);
+        }
+        
+        .badge-custom {
+            display: inline-block;
+            background: #eef3f8;
+            color: #4a6a85;
+            font-size: 11px;
+            padding: 3px 12px;
+            border-radius: 12px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+        .btn-delete {
+            border: none;
+            background: none;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 4px 8px;
+            border-radius: 8px;
+            touch-action: manipulation;
+            color: #b0c4d8;
+            transition: all 0.2s;
+        }
+        .btn-delete:active { 
+            background: #f5f0f0;
+            color: #c0392b;
+            transform: scale(0.92);
+        }
+        
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            backdrop-filter: blur(4px);
+            z-index: 9998;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .modal-overlay.active {
+            display: flex;
+        }
+        .modal-content {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 28px 24px 24px;
+            max-width: 460px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: modalIn 0.3s ease;
+        }
+        @keyframes modalIn {
+            0% { transform: scale(0.95); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .modal-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1a2a3a;
+            margin-bottom: 4px;
+        }
+        .modal-subtitle {
+            font-size: 14px;
+            color: #8a9fb5;
+            margin-bottom: 20px;
+        }
+        .modal-content input {
+            width: 100%;
+            padding: 14px 16px;
+            font-size: 17px;
+            border: 2px solid #e9edf2;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            outline: none;
+            transition: border-color 0.3s;
+            color: #2c3e50;
+            font-family: inherit;
+            background: #f8fafc;
+        }
+        .modal-content input:focus { 
+            border-color: #4a6a85;
+            background: #ffffff;
+        }
+        .modal-content input::placeholder {
+            color: #b0c4d8;
+        }
+        .modal-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 8px;
+        }
+        .modal-actions button {
+            padding: 14px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            touch-action: manipulation;
+            border: none;
+            font-family: inherit;
+            transition: opacity 0.2s;
+            flex: 1;
+        }
+        .modal-actions button:active { opacity: 0.8; }
+        .btn-modal-cancel {
+            background: #f0f2f5;
+            color: #4a5a6a;
+        }
+        .btn-modal-add {
+            background: linear-gradient(145deg, #1a2a3f 0%, #0f1a2b 100%);
+            color: #ffffff;
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #a0b3c6;
+            font-size: 16px;
+        }
+        .empty-state span { font-size: 48px; display: block; margin-bottom: 14px; }
+        
+        .toast {
+            position: fixed;
+            top: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #0f1a2b;
+            color: #f0f4f8;
+            padding: 14px 28px;
+            border-radius: 14px;
+            font-size: 16px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+            z-index: 9999;
+            max-width: 90%;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+            font-weight: 400;
+        }
+        .toast.show { opacity: 1; }
+        
+        .install-banner {
+            background: #f0f4f8;
+            border: 1px solid #d5dce4;
+            border-radius: 12px;
+            padding: 12px 16px;
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 15px;
+            color: #1a2332;
+        }
+        .install-banner .icon-btn {
+            background: #1a2332;
+            color: white;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            font-family: inherit;
+        }
+        .install-banner .icon-btn:active { opacity: 0.8; }
+        
+        /* Scroll automatico per la tastiera */
+        .search-wrapper {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: #e8ecf1;
+            padding-bottom: 4px;
+        }
+        
+        @media (max-width: 480px) {
+            body { padding: 12px; font-size: 16px; }
+            .header h1 { font-size: 24px; }
+            .verb-base { font-size: 19px; }
+            .verb-forms .form-text { font-size: 15px; }
+            .speed-btn { font-size: 12px; padding: 6px 14px; }
+            #splash .splash-title { font-size: 28px; }
+            #splash .splash-icon { font-size: 60px; }
+            #splash .splash-brand { font-size: 15px; letter-spacing: 4px; }
+            .brand-name { font-size: 14px; }
+            .brand-tagline { font-size: 10px; }
+            .btn-add-verb { width: 36px; height: 36px; font-size: 20px; }
+            .btn-action { width: 32px; height: 32px; font-size: 14px; }
+            .modal-content { padding: 20px 16px; }
+        }
+        @media (min-width: 768px) {
+            body { padding: 24px; }
+            .header { padding: 28px 24px; }
+            .verb-card { padding: 22px 24px; }
+        }
+    </style>
+</head>
+<body>
+
+<div id="splash">
+    <div class="splash-icon">📚</div>
+    <div class="splash-title">VERBMASTER UK</div>
+    <div class="splash-brand">APPCIDENT</div>
+    <div class="splash-tagline">CRAZY IDEAS BECOME APPS. BY ACCIDENT.</div>
+    <div class="loader"><div class="loader-bar"></div></div>
+</div>
+
+<div id="toast" class="toast"></div>
+
+<div class="header">
+    <h1>📚 VERBMASTER UK</h1>
+    <div class="subtitle">Irregular Verbs Trainer</div>
+    <div class="version">★ VERSION 2.0 ★</div>
+    
+    <div class="speed-controls">
+        <button id="speedNormal" class="speed-btn active" onclick="setSpeed('normal')">
+            <span class="speed-icon">◉</span> Normale
+            <span class="speed-dot"></span>
+        </button>
+        <button id="speedSlow" class="speed-btn" onclick="setSpeed('slow')">
+            <span class="speed-icon">◌</span> Lenta
+            <span class="speed-dot"></span>
+        </button>
+    </div>
+    <div class="speed-status" id="speedStatus">Velocità: normale (1.0x)</div>
+    
+    <div class="brand-area">
+        <span class="brand-name">APPCIDENT</span>
+        <span class="brand-divider"></span>
+        <span class="brand-tagline">CRAZY IDEAS BECOME APPS. BY ACCIDENT.</span>
+    </div>
+</div>
+
+<div id="installBanner" class="install-banner" style="display:none;">
+    <span>📲 Installa come app per accesso rapido</span>
+    <button class="icon-btn" onclick="installApp()">Installa</button>
+</div>
+
+<!-- Barra di ricerca con sticky -->
+<div class="search-wrapper">
+    <input type="text" id="searchInput" class="search-box" placeholder="🔍 Cerca un verbo..." oninput="render()" onfocus="scrollToSearch()">
+</div>
+
+<div class="counter-row">
+    <span class="counter" id="counter">📖 0 verbi trovati</span>
+    <div class="btn-group-actions">
+        <div class="btn-action-wrapper">
+            <button class="btn-action export" onclick="exportVerbs()" title="Esporta verbi">⬇</button>
+            <span class="btn-action-label">Esporta</span>
+        </div>
+        <div class="btn-action-wrapper">
+            <button class="btn-action import" onclick="document.getElementById('fileInput').click()" title="Importa verbi">⬆</button>
+            <span class="btn-action-label">Importa</span>
+        </div>
+        <input type="file" id="fileInput" accept=".json" onchange="importVerbs(event)">
+        <button class="btn-add-verb" onclick="openModal()" title="Aggiungi un nuovo verbo">+</button>
+    </div>
+</div>
+
+<div id="verbList"></div>
+
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal-content">
+        <div class="modal-title">✏️ Nuovo verbo</div>
+        <div class="modal-subtitle">Inserisci le tre forme del verbo irregolare.<br>I campi Past e Participle sono facoltativi.</div>
+        
+        <input id="newBase" placeholder="Present (es. write)">
+        <input id="newPast" placeholder="Past Simple (es. wrote) - opzionale">
+        <input id="newParticiple" placeholder="Past Participle (es. written) - opzionale">
+        
+        <div class="modal-actions">
+            <button class="btn-modal-cancel" onclick="closeModal()">Annulla</button>
+            <button class="btn-modal-add" onclick="addVerb()">Aggiungi</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // ---------- SCROLL PER TASTIERA ----------
+    function scrollToSearch() {
+        setTimeout(function() {
+            var searchBox = document.getElementById('searchInput');
+            searchBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 300);
+    }
+
+    // ---------- SPLASH SCREEN ----------
+    setTimeout(function() {
+        var splash = document.getElementById('splash');
+        splash.classList.add('hidden');
+        setTimeout(function() {
+            splash.style.display = 'none';
+            render();
+        }, 600);
+    }, 2200);
+
+    // ---------- MODALE ----------
+    function openModal() {
+        document.getElementById('modalOverlay').classList.add('active');
+        document.getElementById('newBase').focus();
+    }
+    
+    function closeModal() {
+        document.getElementById('modalOverlay').classList.remove('active');
+        document.getElementById('newBase').value = '';
+        document.getElementById('newPast').value = '';
+        document.getElementById('newParticiple').value = '';
+    }
+    
+    document.getElementById('modalOverlay').addEventListener('click', function(e) {
+        if (e.target === this) closeModal();
+    });
+
+    // ---------- VELOCITÀ ----------
+    var isSlow = false;
+    
+    try {
+        var saved = localStorage.getItem('verbmaster_speed');
+        if (saved === 'slow') isSlow = true;
+    } catch(e) {}
+    
+    function setSpeed(mode) {
+        isSlow = (mode === 'slow');
+        localStorage.setItem('verbmaster_speed', isSlow ? 'slow' : 'normal');
+        updateSpeedUI();
+    }
+    
+    function updateSpeedUI() {
+        var normalBtn = document.getElementById('speedNormal');
+        var slowBtn = document.getElementById('speedSlow');
+        var status = document.getElementById('speedStatus');
+        
+        if (isSlow) {
+            normalBtn.classList.remove('active');
+            slowBtn.classList.add('active');
+            status.textContent = 'Velocità: lenta (0.5x + doppia pronuncia)';
+        } else {
+            normalBtn.classList.add('active');
+            slowBtn.classList.remove('active');
+            status.textContent = 'Velocità: normale (1.0x)';
+        }
+    }
+    
+    updateSpeedUI();
+
+    // ---------- VOCI TTS ----------
+    var voicesLoaded = false;
+    var englishVoice = null;
+    
+    function loadVoices() {
+        if (voicesLoaded) return;
+        var voices = window.speechSynthesis.getVoices();
+        englishVoice = voices.find(function(v) {
+            return v.lang.startsWith('en') && v.localService === true;
+        }) || voices.find(function(v) {
+            return v.lang.startsWith('en');
+        });
+        if (englishVoice) {
+            console.log('Voce inglese:', englishVoice.name);
+        }
+        voicesLoaded = true;
+    }
+
+    if (window.speechSynthesis) {
+        window.speechSynthesis.getVoices();
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+        setTimeout(loadVoices, 500);
+    }
+
+    // ---------- INSTALLAZIONE ----------
+    var deferredPrompt = null;
+    
+    window.addEventListener('beforeinstallprompt', function(e) {
+        e.preventDefault();
+        deferredPrompt = e;
+        document.getElementById('installBanner').style.display = 'flex';
+    });
+
+    function installApp() {
+        if (deferredPrompt) {
+            deferredPrompt.prompt();
+            deferredPrompt.userChoice.then(function() {
+                document.getElementById('installBanner').style.display = 'none';
+                deferredPrompt = null;
+            });
+        } else {
+            showToast('📱 Usa Chrome → "Aggiungi alla schermata Home"');
+        }
+    }
+
+    if (window.matchMedia('(display-mode: standalone)').matches) {
+        document.getElementById('installBanner').style.display = 'none';
+    }
+
+    // ---------- VERBI ----------
+    var DEFAULT_VERBS = [
+        ["be","was/were","been"], ["become","became","become"], ["begin","began","begun"],
+        ["break","broke","broken"], ["bring","brought","brought"], ["build","built","built"],
+        ["buy","bought","bought"], ["choose","chose","chosen"], ["come","came","come"],
+        ["cost","cost","cost"], ["cut","cut","cut"], ["do","did","done"],
+        ["draw","drew","drawn"], ["drink","drank","drunk"], ["drive","drove","driven"],
+        ["eat","ate","eaten"], ["fall","fell","fallen"], ["feel","felt","felt"],
+        ["find","found","found"], ["fly","flew","flown"], ["forget","forgot","forgotten"],
+        ["get","got","got/gotten"], ["give","gave","given"], ["go","went","gone"],
+        ["grow","grew","grown"], ["have","had","had"], ["hear","heard","heard"],
+        ["hide","hid","hidden"], ["hit","hit","hit"], ["hold","held","held"],
+        ["hurt","hurt","hurt"], ["keep","kept","kept"], ["know","knew","known"],
+        ["lead","led","led"], ["leave","left","left"], ["lend","lent","lent"],
+        ["let","let","let"], ["lie","lay","lain"], ["lose","lost","lost"],
+        ["make","made","made"], ["mean","meant","meant"], ["meet","met","met"],
+        ["pay","paid","paid"], ["put","put","put"], ["read","read","read"],
+        ["ride","rode","ridden"], ["ring","rang","rung"], ["rise","rose","risen"],
+        ["run","ran","run"], ["say","said","said"], ["see","saw","seen"],
+        ["seek","sought","sought"], ["sell","sold","sold"], ["send","sent","sent"],
+        ["set","set","set"], ["shake","shook","shaken"], ["shine","shone","shone"],
+        ["shoot","shot","shot"], ["show","showed","shown"], ["shut","shut","shut"],
+        ["sing","sang","sung"], ["sink","sank","sunk"], ["sit","sat","sat"],
+        ["sleep","slept","slept"], ["speak","spoke","spoken"], ["spend","spent","spent"],
+        ["stand","stood","stood"], ["steal","stole","stolen"], ["stick","stuck","stuck"],
+        ["swim","swam","swum"], ["take","took","taken"], ["teach","taught","taught"],
+        ["tear","tore","torn"], ["tell","told","told"], ["think","thought","thought"],
+        ["throw","threw","thrown"], ["understand","understood","understood"],
+        ["wake","woke","woken"], ["wear","wore","worn"], ["win","won","won"],
+        ["write","wrote","written"]
+    ];
+
+    var customVerbs = [];
+    try {
+        var savedVerbs = localStorage.getItem('customVerbs');
+        if (savedVerbs) customVerbs = JSON.parse(savedVerbs);
+    } catch(e) {}
+
+    // ---------- FUNZIONE PER ORDINARE ALFABETICAMENTE ----------
+    function sortVerbs(verbs) {
+        verbs.sort(function(a, b) {
+            var nameA = a.base.toLowerCase();
+            var nameB = b.base.toLowerCase();
+            if (nameA < nameB) return -1;
+            if (nameA > nameB) return 1;
+            return 0;
+        });
+        return verbs;
+    }
+
+    // ---------- FUNZIONE PER NORMALIZZARE LE MAIUSCOLE ----------
+    function normalizeVerb(verb) {
+        return {
+            base: verb.base.charAt(0).toLowerCase() + verb.base.slice(1),
+            past: verb.past ? verb.past.charAt(0).toLowerCase() + verb.past.slice(1) : '../../',
+            participle: verb.participle ? verb.participle.charAt(0).toLowerCase() + verb.participle.slice(1) : '../../'
+        };
+    }
+
+    function getFullList() {
+        var defaultBases = new Set(DEFAULT_VERBS.map(function(v) { return v[0].toLowerCase(); }));
+        
+        var normalizedCustom = customVerbs.map(normalizeVerb).filter(function(v) {
+            return v.base && v.base.trim() && !defaultBases.has(v.base.toLowerCase());
+        });
+        
+        var defaults = DEFAULT_VERBS.map(function(v) {
+            return { base: v[0], past: v[1], participle: v[2] };
+        });
+        
+        var all = defaults.concat(normalizedCustom);
+        return sortVerbs(all);
+    }
+
+    // ---------- RENDER ----------
+    function render() {
+        var search = document.getElementById('searchInput').value.toLowerCase().trim();
+        var all = getFullList();
+        var filtered = search ? all.filter(function(v) {
+            return v.base.toLowerCase().includes(search);
+        }) : all;
+        
+        document.getElementById('counter').textContent = '📖 ' + filtered.length + ' verbi trovati';
+
+        var container = document.getElementById('verbList');
+        if (filtered.length === 0) {
+            container.innerHTML = '<div class="empty-state"><span>🔍</span>Nessun verbo trovato</div>';
+            return;
+        }
+
+        var defaultBases = new Set(DEFAULT_VERBS.map(function(v) { return v[0].toLowerCase(); }));
+
+        var html = '';
+        for (var i = 0; i < filtered.length; i++) {
+            var v = filtered[i];
+            var isDefault = defaultBases.has(v.base.toLowerCase());
+            var customBadge = '';
+            var deleteBtn = '';
+            if (!isDefault) {
+                customBadge = '<span class="badge-custom">✏️ custom</span>';
+                deleteBtn = '<button class="btn-delete" onclick="deleteVerb(\'' + v.base + '\')">🗑️</button>';
+            }
+            html += `
+                <div class="verb-card">
+                    <div class="verb-base">
+                        <span>${v.base}</span>
+                        <span>${customBadge} ${deleteBtn}</span>
+                    </div>
+                    <div class="verb-forms">
+                        <div class="form-group">
+                            <span class="form-label">Present</span>
+                            <span class="form-text">${v.base}</span>
+                            <button class="btn-speak-small" onclick="speak('${v.base}')">🔊</button>
+                        </div>
+                        <div class="form-group">
+                            <span class="form-label">Past</span>
+                            <span class="form-text">${v.past}</span>
+                            <button class="btn-speak-small" onclick="speak('${v.past}')">🔊</button>
+                        </div>
+                        <div class="form-group">
+                            <span class="form-label">Part.</span>
+                            <span class="form-text">${v.participle}</span>
+                            <button class="btn-speak-small" onclick="speak('${v.participle}')">🔊</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+        container.innerHTML = html;
+    }
+
+    // ---------- PRONUNCIA ----------
+    function speak(text) {
+        if (!text || text.trim() === '' || text === '../../') return;
+        
+        if (!window.speechSynthesis) {
+            showToast('⚠️ Il tuo browser non supporta la sintesi vocale');
+            return;
+        }
+
+        if (!voicesLoaded) loadVoices();
+
+        window.speechSynthesis.cancel();
+
+        function speakOnce(word, callback) {
+            var utterance = new SpeechSynthesisUtterance(word);
+            utterance.lang = 'en-US';
+            utterance.rate = isSlow ? 0.5 : 1.0;
+            utterance.pitch = 1.0;
+            
+            if (englishVoice) {
+                utterance.voice = englishVoice;
+            }
+            
+            utterance.onend = function() { if (callback) callback(); };
+            utterance.onerror = function() { if (callback) callback(); };
+            
+            window.speechSynthesis.speak(utterance);
+        }
+
+        if (isSlow) {
+            speakOnce(text, function() {
+                setTimeout(function() {
+                    speakOnce(text, function() {});
+                }, 600);
+            });
+        } else {
+            speakOnce(text, function() {});
+        }
+    }
+
+    // ---------- AGGIUNGI ----------
+    function addVerb() {
+        var base = document.getElementById('newBase').value.trim();
+        var past = document.getElementById('newPast').value.trim();
+        var participle = document.getElementById('newParticiple').value.trim();
+
+        if (!base) {
+            showToast('⚠️ Il campo Present è obbligatorio');
+            return;
+        }
+
+        var normalizedBase = base.charAt(0).toLowerCase() + base.slice(1);
+        var normalizedPast = past ? past.charAt(0).toLowerCase() + past.slice(1) : '../../';
+        var normalizedParticiple = participle ? participle.charAt(0).toLowerCase() + participle.slice(1) : '../../';
+
+        var defaultBases = new Set(DEFAULT_VERBS.map(function(v) { return v[0].toLowerCase(); }));
+        if (defaultBases.has(normalizedBase.toLowerCase())) {
+            showToast('❌ Questo verbo è già nella lista predefinita');
+            return;
+        }
+
+        if (customVerbs.some(function(v) { return v.base.toLowerCase() === normalizedBase.toLowerCase(); })) {
+            showToast('❌ Verbo già aggiunto personalmente');
+            return;
+        }
+
+        customVerbs.push({ 
+            base: normalizedBase, 
+            past: normalizedPast, 
+            participle: normalizedParticiple 
+        });
+        
+        localStorage.setItem('customVerbs', JSON.stringify(customVerbs));
+        
+        closeModal();
+        showToast('✅ "' + normalizedBase + '" aggiunto!');
+        render();
+    }
+
+    // ---------- RIMUOVI (con conferma) ----------
+    function deleteVerb(base) {
+        if (!confirm('🗑️ Rimuovere definitivamente "' + base + '" dalla lista personalizzata?')) return;
+        customVerbs = customVerbs.filter(function(v) {
+            return v.base.toLowerCase() !== base.toLowerCase();
+        });
+        localStorage.setItem('customVerbs', JSON.stringify(customVerbs));
+        showToast('🗑️ "' + base + '" rimosso');
+        render();
+    }
+
+    // ---------- ESPORTA VERBI ----------
+    function exportVerbs() {
+        if (customVerbs.length === 0) {
+            showToast('⚠️ Nessun verbo personalizzato da esportare');
+            return;
+        }
+        
+        var data = {
+            exportedAt: new Date().toISOString(),
+            version: '2.0',
+            verbs: customVerbs,
+            total: customVerbs.length
+        };
+        
+        var json = JSON.stringify(data, null, 2);
+        var blob = new Blob([json], { type: 'application/json' });
+        var url = URL.createObjectURL(blob);
+        
+        var a = document.createElement('a');
+        a.href = url;
+        a.download = 'verbmaster_custom_verbs_' + new Date().toISOString().slice(0,10) + '.json';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        
+        showToast('✅ ' + customVerbs.length + ' verbi esportati!');
+    }
+
+    // ---------- IMPORTA VERBI ----------
+    function importVerbs(event) {
+        var file = event.target.files[0];
+        if (!file) return;
+        
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            try {
+                var data = JSON.parse(e.target.result);
+                
+                if (!data.verbs || !Array.isArray(data.verbs)) {
+                    showToast('❌ File non valido');
+                    return;
+                }
+                
+                var imported = 0;
+                var skipped = 0;
+                
+                var validVerbs = data.verbs.filter(function(v) {
+                    return v.base && v.past && v.participle;
+                });
+                
+                var defaultBases = new Set(DEFAULT_VERBS.map(function(v) { return v[0].toLowerCase(); }));
+                
+                validVerbs.forEach(function(v) {
+                    var normalized = normalizeVerb(v);
+                    if (defaultBases.has(normalized.base.toLowerCase())) {
+                        skipped++;
+                        return;
+                    }
+                    if (customVerbs.some(function(c) { return c.base.toLowerCase() === normalized.base.toLowerCase(); })) {
+                        skipped++;
+                        return;
+                    }
+                    customVerbs.push(normalized);
+                    imported++;
+                });
+                
+                localStorage.setItem('customVerbs', JSON.stringify(customVerbs));
+                render();
+                
+                var msg = '✅ Importati ' + imported + ' verbi';
+                if (skipped > 0) msg += ' (' + skipped + ' duplicati saltati)';
+                showToast(msg);
+                
+            } catch(err) {
+                showToast('❌ Errore durante l\'importazione');
+                console.error(err);
+            }
+        };
+        reader.readAsText(file);
+        event.target.value = '';
+    }
+
+    // ---------- TOAST ----------
+    var toastTimeout = null;
+    function showToast(msg) {
+        var el = document.getElementById('toast');
+        el.textContent = msg;
+        el.classList.add('show');
+        clearTimeout(toastTimeout);
+        toastTimeout = setTimeout(function() {
+            el.classList.remove('show');
+        }, 3000);
+    }
+</script>
+</body>
+</html>
